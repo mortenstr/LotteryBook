@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryBook", "LotteryBook\LotteryBook.csproj", "{681861A8-7DE4-4F4F-8EC6-8067C7AB411F}"
 EndProject
@@ -18,16 +18,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		VersionInfo.txt = VersionInfo.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{6E28D4AC-27BE-4101-BD68-FB2EB210C52B}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\changelog.md = Docs\changelog.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A74323AF-C697-4CFD-A246-F551AABAC625}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\docs\index.md = Docs\docs\index.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{9FF07EF6-DE95-4C98-8C3F-6E1B7FD1FCC3}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://ptfs01.partner.master.int:8080/tfs/bt
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = LotteryBook\\LotteryBook.csproj
-		SccProjectName1 = LotteryBook
-		SccLocalPath1 = LotteryBook
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -40,5 +43,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A74323AF-C697-4CFD-A246-F551AABAC625} = {6E28D4AC-27BE-4101-BD68-FB2EB210C52B}
+		{9FF07EF6-DE95-4C98-8C3F-6E1B7FD1FCC3} = {A74323AF-C697-4CFD-A246-F551AABAC625}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E137F56-44C6-4D73-B406-9413AA453EEC}
 	EndGlobalSection
 EndGlobal

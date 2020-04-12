@@ -1,0 +1,18 @@
+1) Settings:
+   - Egen angivelse av logo-fil (app.config). Endre det på settings-siden.
+   - Egen setting for "Kjør animasjon" (av/på, ev. hastighetsparametre)
+   - Nullstill trekning (slipper å starte app på nytt)
+   - Lagre xml-fil med dagens dato som default (eventuelt som egen setting)
+2) "About" med navn/nummer på meg ++
+3) Nuget-pakker? Avhengighet til Prism???
+4) Topmost -> Og sette størrelse til hele skjermen i stedet for Maximized. 
+   På den måten slipper man å auto-hide taskbar.
+5) Eget ikon (lage på web)
+6) Bytte ut bokstav-innlegging på "letter" til en combo-liste med valgbare bokstaver
+
+Future:
+- Ytterligere animasjoner (eks. bla, rulle, komme "via path" ut fra bok)
+- Lyd?
+- Mørk forside også?
+- Forbedre inntastings dialog, mer effektiv, tastatur-vennelig (hurtig-taster).
+- Tester (teste random-generator, ++)

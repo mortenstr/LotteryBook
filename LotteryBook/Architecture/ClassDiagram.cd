@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LotteryBook.LotteryManager">
+    <Position X="1.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAgIIAAIACBIAABAAAAAAQDAAACAIIhAAQAACoCAA=</HashCode>
+      <FileName>LotteryManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="LotteryBooks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LotteryBook.LotteryTicketsBook">
+    <Position X="5.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAAAAAAAAASQAIAAAAQAABAAAAAAAKwAAAAAI=</HashCode>
+      <FileName>LotteryTicketsBook.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="LotteryTickets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LotteryBook.DrawGenerator">
+    <Position X="1.25" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrawGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LotteryBook.Draw">
+    <Position X="2" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Draw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LotteryBook.Views.MainWindow">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAIgAAAAAAAAAEIAFCACAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ViewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LotteryBook.LotteryTicket">
+    <Position X="7" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAACgAEAAAA=</HashCode>
+      <FileName>LotteryTicket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LotteryBook.Views.LotteryViewModel">
+    <Position X="8.25" Y="0.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAQABEIIADAAIhABEAQARAAAAAADAAAAAQAQIAABAAg=</HashCode>
+      <FileName>Views\LotteryViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LotteryBook.Views.StartLotteryUC">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\StartLotteryUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_ViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LotteryBook.Views.SettingsUC">
+    <Position X="12.25" Y="6" Width="1.5" />
+    <AssociationLine Name="m_ViewModel" Type="LotteryBook.Views.LotteryViewModel">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.255" Y="0.206" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SettingsUC.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_ViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

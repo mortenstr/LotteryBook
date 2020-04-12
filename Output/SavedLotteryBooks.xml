@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLotteryBookData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LotteryBookData>
+    <ColorName>Rosa</ColorName>
+    <Letter>65</Letter>
+    <WholeBookSold>true</WholeBookSold>
+    <TicketsLeftRange />
+  </LotteryBookData>
+  <LotteryBookData>
+    <ColorName>Grønn</ColorName>
+    <Letter>66</Letter>
+    <WholeBookSold>true</WholeBookSold>
+    <TicketsLeftRange />
+  </LotteryBookData>
+</ArrayOfLotteryBookData>

@@ -2,12 +2,13 @@
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
-using LotteryBook.Util;
-using LotteryBook.Views.Draw;
-using LotteryBook.Views.Settings;
+using LotteryBook.Model;
+using LotteryBook.Program.Util;
+using LotteryBook.Program.Views.Draw;
+using LotteryBook.Program.Views.Settings;
 using Microsoft.Practices.Prism.Commands;
 
-namespace LotteryBook.Views
+namespace LotteryBook.Program.Views
 {
     public class LotteryViewModel : NotifyPropertyChangedBase, IDisposable
     {

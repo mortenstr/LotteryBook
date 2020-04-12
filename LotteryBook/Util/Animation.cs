@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Media.Animation;
 
-namespace LotteryBook.Util
+namespace LotteryBook.Program.Util
 {
     public static class Animation
     {

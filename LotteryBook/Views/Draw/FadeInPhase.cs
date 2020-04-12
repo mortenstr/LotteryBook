@@ -1,4 +1,4 @@
-﻿namespace LotteryBook.Views.Draw
+﻿namespace LotteryBook.Program.Views.Draw
 {
     public enum FadeInPhase
     {

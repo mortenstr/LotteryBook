@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Windows.Data;
 
-namespace LotteryBook.Converters
+namespace LotteryBook.Program.Converters
 {
     public class BoolConverter<T> : IValueConverter
     {

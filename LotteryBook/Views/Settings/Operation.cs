@@ -1,4 +1,4 @@
-﻿namespace LotteryBook.Views.Settings
+﻿namespace LotteryBook.Program.Views.Settings
 {
     public enum Operation
     {

@@ -1,7 +1,7 @@
-﻿<Application x:Class="App"
+﻿<Application x:Class="LotteryBook.Program.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="Views\MainWindow.xaml">
+             StartupUri="Views\LotteryView.xaml">
     <Application.Resources>
         <!--Control colors.-->
         <Color x:Key="ControlNormalColor">#0580808E</Color>

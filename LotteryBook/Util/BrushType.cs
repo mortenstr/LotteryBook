@@ -1,4 +1,4 @@
-﻿namespace LotteryBook.Util
+﻿namespace LotteryBook.Program.Util
 {
     public enum BrushType
     {

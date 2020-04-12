@@ -1,8 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Input;
 
-namespace LotteryBook.Views.Draw
+namespace LotteryBook.Program.Views.Draw
 {
     /// <summary>
     /// The user control for running the drawing of lottery tickets

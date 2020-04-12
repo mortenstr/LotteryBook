@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace LotteryBook
+namespace LotteryBook.Program
 {
     /// <summary>
     /// Interaction logic for App.xaml

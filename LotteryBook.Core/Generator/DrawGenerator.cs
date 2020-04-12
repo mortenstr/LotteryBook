@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LotteryBook.Generator
+namespace LotteryBook.Model.Generator
 {
     public static class DrawGenerator
     {

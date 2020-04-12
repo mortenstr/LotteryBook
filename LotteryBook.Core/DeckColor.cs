@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Media;
 
-namespace LotteryBook.Views
+namespace LotteryBook.Model
 {
     public static class DeckColor
     {

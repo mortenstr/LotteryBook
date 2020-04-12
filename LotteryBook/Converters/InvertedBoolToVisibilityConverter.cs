@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace LotteryBook.Converters
+namespace LotteryBook.Program.Converters
 {
     public sealed class InvertedBoolToVisibilityConverter : BoolConverter<Visibility>
     {

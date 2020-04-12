@@ -1,4 +1,4 @@
-﻿namespace LotteryBook.Views.Settings
+﻿namespace LotteryBook.Model.Settings
 {
     public class LotterySettings : NotifyPropertyChangedBase
     {

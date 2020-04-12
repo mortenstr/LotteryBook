@@ -1,4 +1,4 @@
-﻿namespace LotteryBook.Converters
+﻿namespace LotteryBook.Program.Converters
 {
     public sealed class InvertedBoolConverter : BoolConverter<bool>
     {

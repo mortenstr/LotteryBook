@@ -6,11 +6,11 @@ using System.Linq;
 using System.Windows;
 using System.Xml;
 using System.Xml.Serialization;
-using LotteryBook.Data;
-using LotteryBook.Generator;
-using LotteryBook.Views.Settings;
+using LotteryBook.DataAccess.Data;
+using LotteryBook.Model.Generator;
+using LotteryBook.Model.Settings;
 
-namespace LotteryBook
+namespace LotteryBook.Model
 {
     public class LotteryManager : NotifyPropertyChangedBase
     {

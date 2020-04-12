@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace LotteryBook.Converters
+namespace LotteryBook.Program.Converters
 {
     public class ColorToBrushConverter : IValueConverter
     {

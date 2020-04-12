@@ -1,6 +1,7 @@
 ﻿using System.Windows;
+using LotteryBook.Model;
 
-namespace LotteryBook.Views.Draw
+namespace LotteryBook.Program.Views.Draw
 {
     public class LotteryTicketViewModel : DependencyObject
     {

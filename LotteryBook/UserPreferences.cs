@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using LotteryBook.Properties;
+using LotteryBook.Program.Properties;
 
-namespace LotteryBook
+namespace LotteryBook.Program
 {
     public class UserPreferences
     {

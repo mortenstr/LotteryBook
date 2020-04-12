@@ -2,17 +2,18 @@
 using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
+using LotteryBook.Model;
 
-namespace LotteryBook.Views
+namespace LotteryBook.Program.Views
 {
     /// <summary>
     /// Interaction logic for the class
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LotteryView : Window
     {
-        private static MainWindow m_MainWindow;
+        private static LotteryView m_MainWindow;
 
-        public MainWindow()
+        public LotteryView()
         {
             m_MainWindow = this;
 
@@ -36,7 +37,7 @@ namespace LotteryBook.Views
 
         public LotteryViewModel ViewModel { get; private set; }
 
-        public static MainWindow GetInstance()
+        public static LotteryView GetInstance()
         {
             return m_MainWindow;
         }

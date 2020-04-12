@@ -3,8 +3,9 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using LotteryBook.Model;
 
-namespace LotteryBook.Views.Settings
+namespace LotteryBook.Program.Views.Settings
 {
     public partial class SmallColorPicker : UserControl
     {

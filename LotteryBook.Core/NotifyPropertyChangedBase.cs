@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace LotteryBook
+namespace LotteryBook.Model
 {
     public abstract class NotifyPropertyChangedBase : INotifyPropertyChanged
     {

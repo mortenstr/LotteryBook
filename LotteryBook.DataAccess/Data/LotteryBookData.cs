@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Serialization;
 
-namespace LotteryBook.Data
+namespace LotteryBook.DataAccess.Data
 {
     [Serializable]
     [XmlRoot("document")] 

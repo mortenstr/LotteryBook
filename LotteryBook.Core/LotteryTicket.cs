@@ -1,7 +1,6 @@
 ﻿using System.Windows.Media;
-using LotteryBook.Views;
 
-namespace LotteryBook
+namespace LotteryBook.Model
 {
     public class LotteryTicket
     {

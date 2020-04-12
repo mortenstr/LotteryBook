@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,9 +7,9 @@
     <ProjectGuid>{681861A8-7DE4-4F4F-8EC6-8067C7AB411F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LotteryBook</RootNamespace>
-    <AssemblyName>LotteryBook</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>LotteryBook.Program</RootNamespace>
+    <AssemblyName>LotteryBook.Program</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -19,6 +19,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -64,14 +65,9 @@
     <Compile Include="Converters\InvertedBoolToVisibilityConverter.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
     <Compile Include="Converters\InvertedBoolConverter.cs" />
-    <Compile Include="Data\LotteryBookData.cs" />
-    <Compile Include="Draw.cs" />
-    <Compile Include="Generator\MyExtensions.cs" />
-    <Compile Include="LotteryTicket.cs" />
     <Compile Include="UserPreferences.cs" />
     <Compile Include="Util\Animation.cs" />
     <Compile Include="Util\BrushType.cs" />
-    <Compile Include="Views\DeckColor.cs" />
     <Compile Include="Views\Draw\FadeInPhase.cs" />
     <Compile Include="Views\Settings\Operation.cs" />
     <Compile Include="Views\Settings\ProcessLotteryBookUC.xaml.cs">
@@ -82,7 +78,6 @@
       <DependentUpon>LotteryTicketUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Draw\LotteryTicketViewModel.cs" />
-    <Compile Include="Views\Settings\LotterySettings.cs" />
     <Compile Include="Views\Settings\SettingsUC.xaml.cs">
       <DependentUpon>SettingsUC.xaml</DependentUpon>
     </Compile>
@@ -101,7 +96,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\MainWindow.xaml">
+    <Page Include="Views\LotteryView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -109,11 +104,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Generator\DrawGenerator.cs" />
-    <Compile Include="LotteryManager.cs" />
-    <Compile Include="LotteryTicketsBook.cs" />
-    <Compile Include="Views\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Views\LotteryView.xaml.cs">
+      <DependentUpon>LotteryView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\Settings\SettingsUC.xaml">
@@ -131,7 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Views\LotteryViewModel.cs" />
-    <Compile Include="NotifyPropertyChangedBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -149,7 +140,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Architecture\ClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -175,6 +165,12 @@
   <ItemGroup>
     <Resource Include="Resources\Header.jpg" />
     <Resource Include="Resources\Poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LotteryBook.Core\LotteryBook.Model.csproj">
+      <Project>{65D52CCC-B690-4159-AC47-C986ECF5B1E7}</Project>
+      <Name>LotteryBook.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

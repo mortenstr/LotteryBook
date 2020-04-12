@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
-using LotteryBook.Views;
 
-namespace LotteryBook
+namespace LotteryBook.Model
 {
     /// <summary>
     /// Todo: This class should be serialized to XML...

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 
-namespace LotteryBook.Generator
+namespace LotteryBook.Model.Generator
 {
     static class MyExtensions
     {

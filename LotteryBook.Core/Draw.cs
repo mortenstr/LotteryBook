@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LotteryBook
+namespace LotteryBook.Model
 {
     public class Draw
     {

@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using System.Windows.Media;
+using LotteryBook.Model;
 
-namespace LotteryBook.Views.Settings
+namespace LotteryBook.Program.Views.Settings
 {
     /// <summary>
     /// The user control for presenting and editing of the lottery books.

@@ -1,6 +1,7 @@
 ﻿using System.Windows;
+using LotteryBook.Model;
 
-namespace LotteryBook.Views.Settings
+namespace LotteryBook.Program.Views.Settings
 {
     public class ProcessLotteryBookViewModel : DependencyObject
     {

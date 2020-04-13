@@ -19,8 +19,8 @@ namespace LotteryBook.Program.Util
 
             detailView.Opacity = fromOpacity;
 
-            Storyboard sb = new Storyboard();
-            DoubleAnimation animation = new DoubleAnimation(fromOpacity, toOpacity, new Duration(new TimeSpan(0, 0, 0, 0, 300)));
+            var sb = new Storyboard();
+            var animation = new DoubleAnimation(fromOpacity, toOpacity, new Duration(new TimeSpan(0, 0, 0, 0, 300)));
             Storyboard.SetTarget(animation, detailView);
             Storyboard.SetTargetProperty(animation, new PropertyPath(UIElement.OpacityProperty));
             sb.Children.Add(animation);

@@ -1,3 +1,13 @@
+# 1.1.0
+*Created 12.04.2020*
+
+Refactoring application. Divided it into three modules:
+- LotteryBook.DataAccess
+- LotteryBook.Model
+- LotteryBook.Program (the executable)
+
+All projects use .NET 4.7.2.
+
 # 1.0.2
 *Created 12.04.2020*
 

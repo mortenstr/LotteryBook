@@ -6,13 +6,7 @@ namespace LotteryBook.Model
     {
         public Brush Color { get; set; }
 
-        public string ColorName
-        {
-            get
-            {
-                return DeckColor.GetName(Color);
-            }
-        }
+        public string ColorName => DeckColor.GetName(Color);
 
         public int Number { get; set; }
 
@@ -20,12 +14,7 @@ namespace LotteryBook.Model
 
         public bool AreSame(LotteryTicket ticket)
         {
-            if (Color.Equals(ticket.Color) && Letter == ticket.Letter && Number == ticket.Number)
-            {
-                return true;
-            }
-
-            return false;
+            return Color.Equals(ticket.Color) && Letter == ticket.Letter && Number == ticket.Number;
         }
     }
 }

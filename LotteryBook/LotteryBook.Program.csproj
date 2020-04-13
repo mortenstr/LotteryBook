@@ -67,7 +67,6 @@
     <Compile Include="Converters\InvertedBoolConverter.cs" />
     <Compile Include="UserPreferences.cs" />
     <Compile Include="Util\Animation.cs" />
-    <Compile Include="Util\BrushType.cs" />
     <Compile Include="Views\Draw\FadeInPhase.cs" />
     <Compile Include="Views\Settings\Operation.cs" />
     <Compile Include="Views\Settings\ProcessLotteryBookUC.xaml.cs">

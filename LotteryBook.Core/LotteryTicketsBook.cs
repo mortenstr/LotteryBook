@@ -43,7 +43,7 @@ namespace LotteryBook.Model
             get
             {
                 var lotteryTickets = new List<LotteryTicket>();
-                for (int i = 1; i <= 100; i++)
+                for (var i = 1; i <= 100; i++)
                 {
                     if (!WholeBookSold && IsEqualOrWithinRange(i))
                     {
@@ -59,65 +59,31 @@ namespace LotteryBook.Model
 
         public string TicketsLeftRange
         {
-            get
-            {
-                return (string)GetValue(TicketsLeftRangeProperty);
-            }
-
-            set
-            {
-                SetValue(TicketsLeftRangeProperty, value);
-            }
+            get => (string)GetValue(TicketsLeftRangeProperty);
+            set => SetValue(TicketsLeftRangeProperty, value);
         }
 
         public bool WholeBookSold
         {
-            get
-            {
-                return (bool)GetValue(WholeBookSoldProperty);
-            }
-
-            set
-            {
-                SetValue(WholeBookSoldProperty, value);
-            }
+            get => (bool)GetValue(WholeBookSoldProperty);
+            set => SetValue(WholeBookSoldProperty, value);
         }
 
         public Brush Color
         {
-            get
-            {
-                return (Brush)GetValue(ColorProperty);
-            }
-
-            set
-            {
-                SetValue(ColorProperty, value);
-            }
+            get => (Brush)GetValue(ColorProperty);
+            set => SetValue(ColorProperty, value);
         }
 
         public char Letter
         {
-            get
-            {
-                return (char)GetValue(LetterProperty);
-            }
-
-            set
-            {
-                SetValue(LetterProperty, value);
-            }
+            get => (char)GetValue(LetterProperty);
+            set => SetValue(LetterProperty, value);
         }
 
-        public string ColorName
-        {
-            get
-            {
-                return DeckColor.GetName(Color);
-            }
-        }
+        public string ColorName => DeckColor.GetName(Color);
 
-        public bool IsEqualOrWithinRange(int value)
+        private bool IsEqualOrWithinRange(int value)
         {
             if (string.IsNullOrEmpty(TicketsLeftRange))
             {
@@ -139,11 +105,8 @@ namespace LotteryBook.Model
                 var rangeNumber = item.Split('-');
                 if (rangeNumber.Length == 2)
                 {
-                    int min;
-                    int max;
-
-                    int.TryParse(rangeNumber[0], out min);
-                    int.TryParse(rangeNumber[1], out max);
+                    int.TryParse(rangeNumber[0], out var min);
+                    int.TryParse(rangeNumber[1], out var max);
 
                     if (value >= min && value <= max)
                     {
@@ -157,8 +120,7 @@ namespace LotteryBook.Model
 
         private static void WholeBookSoldCallback(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            LotteryTicketsBook book = d as LotteryTicketsBook;
-            if (book != null && book.WholeBookSold)
+            if (d is LotteryTicketsBook book && book.WholeBookSold)
             {
                 book.TicketsLeftRange = string.Empty;
             }

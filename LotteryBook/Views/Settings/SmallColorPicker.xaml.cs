@@ -143,9 +143,9 @@ namespace LotteryBook.Program.Views.Settings
         {
             Picker.Items.Clear();
 
-            foreach (string color in DeckColor.Colors)
+            foreach (var color in DeckColor.Colors)
             {
-                AddColor((Color)ColorConverter.ConvertFromString(color));                
+                AddColor((Color)ColorConverter.ConvertFromString(color.RGB));                
             }
         }
 

@@ -13,9 +13,6 @@ namespace LotteryBook.DataAccess.Data
         [XmlElement] 
         public char Letter { get; set; }
 
-        [XmlElement] 
-        public bool WholeBookSold { get; set; }
-
         [XmlElement]
         public string TicketsLeftRange { get; set; }
     }

@@ -24,59 +24,31 @@ namespace LotteryBook.Program.Views.Settings
 
         public bool WholeBookSold
         {
-            get
-            {
-                return (bool)GetValue(WholeBookSoldProperty);
-            }
-
-            set
-            {
-                SetValue(WholeBookSoldProperty, value);
-            }
+            get => (bool)GetValue(WholeBookSoldProperty);
+            set => SetValue(WholeBookSoldProperty, value);
         }
 
         public string TicketsLeftRange
         {
-            get
-            {
-                return (string)GetValue(TicketsLeftRangeProperty);
-            }
-
-            set
-            {
-                SetValue(TicketsLeftRangeProperty, value);
-            }
+            get => (string)GetValue(TicketsLeftRangeProperty);
+            set => SetValue(TicketsLeftRangeProperty, value);
         }
 
         public char Letter
         {
-            get
-            {
-                return (char)GetValue(LetterProperty);
-            }
-
-            set
-            {
-                SetValue(LetterProperty, value);
-            }
+            get => (char)GetValue(LetterProperty);
+            set => SetValue(LetterProperty, value);
         }
 
         public string DeckColor
         {
-            get
-            {
-                return (string)GetValue(DeckColorProperty);
-            }
-
-            set
-            {
-                SetValue(DeckColorProperty, value);
-            }
+            get => (string)GetValue(DeckColorProperty);
+            set => SetValue(DeckColorProperty, value);
         }
 
-        public LotteryTicketsBook GetLotteryTicketBook()
-        {
-            return new LotteryTicketsBook(DeckColor, Letter, WholeBookSold, TicketsLeftRange);
-        }
+        //public LotteryTicketsBook GetLotteryTicketBook()
+        //{
+        //    return new LotteryTicketsBook(DeckColor, Letter, WholeBookSold, TicketsLeftRange);
+        //}
     }
 }

@@ -93,21 +93,12 @@ namespace LotteryBook.Program.Views
 
         public LotteryTicketsBook SelectedLotteryBook { get; set; }
 
-        public int SoldTickets
-        {
-            get
-            {
-                return LotteryManager.TicketsSold;
-            }
-        }
+        public int SoldTickets => LotteryManager.TicketsSold;
 
         public virtual void OnDrawTicketStarted()
         {
-            EventHandler handler = DrawTicketStarted;
-            if (handler != null)
-            {
-                handler(this, EventArgs.Empty);
-            }
+            var handler = DrawTicketStarted;
+            handler?.Invoke(this, EventArgs.Empty);
         }
 
         public void RemoveLotteryBook(LotteryTicketsBook lotteryTicketsBook)
@@ -162,8 +153,7 @@ namespace LotteryBook.Program.Views
 
         public void Draw()
         {
-            var startLotteryUC = DetailView as StartLotteryUC;
-            if (startLotteryUC != null && DrawInProgress == false)
+            if (DetailView is StartLotteryUC startLotteryUC && DrawInProgress == false)
             {
                 startLotteryUC.Draw();
             }

@@ -95,7 +95,7 @@ namespace LotteryBook.Program.Views
 
         private void ToggleFullScreen_Click(object sender, RoutedEventArgs e)
         {
-            ToggleButton button = sender as ToggleButton;
+            var button = sender as ToggleButton;
             if (button != null)
             {
                 ToggleFullScreen(button.IsChecked == true);

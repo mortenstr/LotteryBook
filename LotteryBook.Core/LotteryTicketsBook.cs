@@ -30,12 +30,12 @@ namespace LotteryBook.Model
                 typeof(LotteryTicketsBook), 
                 new PropertyMetadata(default(List<LotteryTicket>)));
 
-        public LotteryTicketsBook(string color, char letter, bool wholeBookSold, string ticketsLeftRange)
+        public LotteryTicketsBook(string color, char letter, string ticketsLeftRange = null)
         {
             Color = DeckColor.GetColorBrush(color);
             Letter = letter;
             TicketsLeftRange = ticketsLeftRange;
-            WholeBookSold = wholeBookSold;
+            WholeBookSold = string.IsNullOrEmpty(ticketsLeftRange);
         }
 
         public List<LotteryTicket> LotteryTickets

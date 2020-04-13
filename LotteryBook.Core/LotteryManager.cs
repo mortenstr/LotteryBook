@@ -19,7 +19,7 @@ namespace LotteryBook.Model
         private static LotteryManager m_Instance;
         private LotteryTicket m_LastTicketDrawn;
 
-        private LotteryManager()
+        internal LotteryManager()
         {
             LotteryBooks = new ObservableCollection<LotteryTicketsBook>();
             PreviousDraws = new List<Draw>();
@@ -44,7 +44,6 @@ namespace LotteryBook.Model
                         ColorName = lotteryBook.ColorName, 
                         Letter = lotteryBook.Letter,
                         TicketsLeftRange = lotteryBook.TicketsLeftRange, 
-                        WholeBookSold = lotteryBook.WholeBookSold
                     };
 
                     lotteryBookDataList.Add(data);
@@ -183,7 +182,7 @@ namespace LotteryBook.Model
                         var lotteryBooksDataList = (List<LotteryBookData>)serializer.Deserialize(reader);
                         foreach (var bookData in lotteryBooksDataList)
                         {
-                            AddLotteryBook(new LotteryTicketsBook(bookData.ColorName, bookData.Letter, bookData.WholeBookSold, bookData.TicketsLeftRange));
+                            AddLotteryBook(new LotteryTicketsBook(bookData.ColorName, bookData.Letter, bookData.TicketsLeftRange));
                         }
 
                         reader.Close();

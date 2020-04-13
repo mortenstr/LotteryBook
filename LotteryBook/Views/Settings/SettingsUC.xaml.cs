@@ -41,7 +41,7 @@ namespace LotteryBook.Program.Views.Settings
         {
             if (m_AddLotteryBook == null)
             {
-                var viewModel = new LotteryTicketsBook(DeckColor.DefaultColor, 'A', true, string.Empty);
+                var viewModel = new LotteryTicketsBook(DeckColor.DefaultColor, 'A');
                 m_AddLotteryBook = new ProcessLotteryBookUC(viewModel, CloseAddDialog, Operation.Add);
                 ProcessLotteryBook();
             }

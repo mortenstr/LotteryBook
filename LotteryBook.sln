@@ -40,6 +40,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryBook.Model", "Lotter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryBook.DataAccess", "LotteryBook.DataAccess\LotteryBook.DataAccess.csproj", "{87E20D27-F7FE-42BE-B94C-3D795F5E631D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryBook.Model.Tests", "LotteryBook.Model.Tests\LotteryBook.Model.Tests.csproj", "{B31F8D55-F2F7-43EB-887A-C0DBAE5F238E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4BD0A8BD-BEB0-45EC-BDCE-4C8469ADFA64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +62,10 @@ Global
 		{87E20D27-F7FE-42BE-B94C-3D795F5E631D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87E20D27-F7FE-42BE-B94C-3D795F5E631D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87E20D27-F7FE-42BE-B94C-3D795F5E631D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31F8D55-F2F7-43EB-887A-C0DBAE5F238E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31F8D55-F2F7-43EB-887A-C0DBAE5F238E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31F8D55-F2F7-43EB-887A-C0DBAE5F238E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31F8D55-F2F7-43EB-887A-C0DBAE5F238E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +73,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A74323AF-C697-4CFD-A246-F551AABAC625} = {6E28D4AC-27BE-4101-BD68-FB2EB210C52B}
 		{9FF07EF6-DE95-4C98-8C3F-6E1B7FD1FCC3} = {A74323AF-C697-4CFD-A246-F551AABAC625}
+		{B31F8D55-F2F7-43EB-887A-C0DBAE5F238E} = {4BD0A8BD-BEB0-45EC-BDCE-4C8469ADFA64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E137F56-44C6-4D73-B406-9413AA453EEC}

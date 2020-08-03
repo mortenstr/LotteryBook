@@ -10,8 +10,8 @@ namespace LotteryBook.Model
             Time = DateTime.Now;
         }
 
-        public LotteryTicket Ticket { get; private set; }
+        public LotteryTicket Ticket { get; }
 
-        public DateTime Time { get; private set; }
+        public DateTime Time { get; }
     }
 }

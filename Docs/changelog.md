@@ -1,13 +1,17 @@
 # 1.1.0
 *Created 13.04.2020*
 
-Refactoring application. Divided it into three modules:
+Refactoring application. Devided it into three modules:
 - LotteryBook.DataAccess
 - LotteryBook.Model
 - LotteryBook.Program (the executable)
 
 All projects use .NET 4.7.2.
 Added unit tests project for _LotteryBook.Model_.
+
+Bugfixes: 
+- Full screen feature: Removed use of Topmost and Maximize. Set the size of the main 
+  window to cover the whole screen.
 
 # 1.0.2
 *Created 12.04.2020*

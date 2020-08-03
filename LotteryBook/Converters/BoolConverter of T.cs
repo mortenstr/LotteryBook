@@ -5,7 +5,7 @@ using System.Windows.Data;
 
 namespace LotteryBook.Program.Converters
 {
-    public class BoolConverter<T> : IValueConverter
+    public abstract class BoolConverter<T> : IValueConverter
     {
         public BoolConverter(T trueValue, T falseValue)
         {

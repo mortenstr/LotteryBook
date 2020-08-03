@@ -13,6 +13,8 @@ namespace LotteryBook.Program.Views
     {
         private static LotteryView m_MainWindow;
 
+        private Rect m_NonFullScreenRect;
+
         public LotteryView()
         {
             m_MainWindow = this;
@@ -31,6 +33,8 @@ namespace LotteryBook.Program.Views
                 ViewModel.Dispose();
                 LotteryManager.GetInstance().Save();
             };
+
+            m_NonFullScreenRect = new Rect(new Point(Left, Top), new Size(Width, Height));
 
             ToggleFullScreen(false);
         }
@@ -95,8 +99,7 @@ namespace LotteryBook.Program.Views
 
         private void ToggleFullScreen_Click(object sender, RoutedEventArgs e)
         {
-            var button = sender as ToggleButton;
-            if (button != null)
+            if (sender is ToggleButton button)
             {
                 ToggleFullScreen(button.IsChecked == true);
             }
@@ -106,13 +109,25 @@ namespace LotteryBook.Program.Views
         {
             if (fullscreen)
             {
-                WindowState = WindowState.Maximized;
+                m_NonFullScreenRect = new Rect(new Point(Left, Top), new Size(Width, Height));
+
+                Width = SystemParameters.PrimaryScreenWidth + 7;
+                Height = SystemParameters.PrimaryScreenHeight;
+                Left = -7;
+                Top = 0;
+
                 WindowStyle = WindowStyle.None;
+                ResizeMode = ResizeMode.NoResize;
             }
             else
             {
-                WindowState = WindowState.Normal;
+                Width = m_NonFullScreenRect.Width;
+                Height = m_NonFullScreenRect.Height;
+                Left = m_NonFullScreenRect.Left;
+                Top = m_NonFullScreenRect.Top;
+
                 WindowStyle = WindowStyle.ThreeDBorderWindow;
+                ResizeMode = ResizeMode.CanResize;
             }
 
             showFullScreenToggleButton.IsChecked = WindowStyle == WindowStyle.None;

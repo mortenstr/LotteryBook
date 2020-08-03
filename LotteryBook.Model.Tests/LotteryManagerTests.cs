@@ -28,10 +28,15 @@ namespace LotteryBook.Model.Tests
         {
             var lotteryManager = new LotteryManager();
             lotteryManager.AddLotteryBook(new LotteryTicketsBook("Blue", 'D'));
+            var expectedTicketsSold = lotteryManager.Bucket.Count;
+            var expectedBucketCountAfterDraw = lotteryManager.Bucket.Count - 1;
+
             lotteryManager.DrawLotteryTicket();
 
             Assert.IsNotNull(lotteryManager.LastTicketDrawn);
             Assert.AreEqual(1, lotteryManager.PreviousDraws.Count);
+            Assert.AreEqual(expectedBucketCountAfterDraw, lotteryManager.Bucket.Count);
+            Assert.AreEqual(expectedTicketsSold, lotteryManager.TicketsSold);
         }
 
         [DataTestMethod]
